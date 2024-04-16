@@ -21,6 +21,48 @@ public class BD extends SQLiteOpenHelper {
                         "crotal TEXT UNIQUE NOT NULL,"+
                         "raza TEXT NOT NULL);");
 
+        sqLiteDatabase.execSQL("CREATE TABLE nacimientos" +
+                "(id INTEGER PRIMARY KEY AUTOINCREMENT, "+
+                "crotal_madre TEXT UNIQUE NOT NULL,"+
+                "ubicacion TEXT );");
+
+        sqLiteDatabase.execSQL("CREATE TABLE muertes" +
+                "(id INTEGER PRIMARY KEY AUTOINCREMENT, "+
+                "causa TEXT,"+
+                "ubicacion TEXT);");
+
+        sqLiteDatabase.execSQL("CREATE TABLE compras" +
+                "(id INTEGER PRIMARY KEY AUTOINCREMENT, "+
+                "explotacion_procedente TEXT UNIQUE NOT NULL,"+
+                "crotal TEXT );");
+
+        sqLiteDatabase.execSQL("CREATE TABLE venta" +
+                "(id INTEGER PRIMARY KEY AUTOINCREMENT, "+
+                "explotacion_destino TEXT UNIQUE NOT NULL,"+
+                "crotal TEXT );");
+
+        sqLiteDatabase.execSQL("CREATE TABLE saneamientos_privados" +
+                "(id INTEGER PRIMARY KEY AUTOINCREMENT, "+
+                "prueba TEXT UNIQUE NOT NULL,"+
+                "ubicacion TEXT );");
+
+        sqLiteDatabase.execSQL("CREATE TABLE saneamientos_obligatorios" +
+                "(id INTEGER PRIMARY KEY AUTOINCREMENT, "+
+                "prueba TEXT UNIQUE NOT NULL,"+
+                "ubicacion TEXT );");
+
+        sqLiteDatabase.execSQL("CREATE TABLE ubicacion" +
+                "(id INTEGER PRIMARY KEY AUTOINCREMENT, "+
+                "nombre TEXT UNIQUE NOT NULL,"+
+                "tipo TEXT );");
+
+        sqLiteDatabase.execSQL("CREATE TABLE saneamientos_privados" +
+                "(id INTEGER PRIMARY KEY AUTOINCREMENT, "+
+                "prueba TEXT UNIQUE NOT NULL,"+
+                "ubicacion TEXT );");
+
+
+
     }
 
     @Override
