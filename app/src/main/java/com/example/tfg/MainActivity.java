@@ -2,6 +2,7 @@ package com.example.tfg;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -9,14 +10,26 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button boton;
+    Button boton, boton2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setContentView(R.layout.menu);
+        setContentView(R.layout.activity_menu);
         boton=this.findViewById(R.id.Boton);
+        boton2=this.findViewById(R.id.Boton2);
+
+
+
+    }
+
+    public void botones(View view){
+        boton2.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MainActivity.this, Menu.class));
+            }
+        });
     }
 
     public void crear(View view){

@@ -12,27 +12,28 @@
         android:id="@+id/Boton"
         android:layout_width="120pt"
         android:layout_height="20pt"
+        android:backgroundTint="#A3298531"
         android:onClick="crear"
         android:text="@string/insertar_archivo_excel"
-        android:backgroundTint="#298531"
+        app:cornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Boton2"
         android:layout_width="120pt"
         android:layout_height="20pt"
-        android:layout_marginStart="122dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="123dp"
         android:backgroundTint="#298531"
         android:text="@string/SIN_DATOS"
-        android:visibility="visible"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Boton"
-        tools:visibility="visible"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
