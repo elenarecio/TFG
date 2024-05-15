@@ -9,62 +9,88 @@
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="125dp"
-        android:layout_height="34dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="124dp"
         android:fontFamily="@font/actor"
         android:text="TERNEROS"
         android:textSize="25sp"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="501dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="125dp"
+        android:layout_width="0dp"
         android:layout_height="34dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="58dp"
         android:fontFamily="@font/actor"
         android:text="TOROS"
         android:textSize="25sp"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="501dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
-        android:layout_width="308dp"
-        android:layout_height="43dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="150dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="24dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="194dp"
-        android:layout_height="51dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="150dp"
         android:fontFamily="@font/actor"
         android:text="ANIMALES"
         android:textSize="40dp"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="125dp"
-        android:layout_height="34dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="408dp"
         android:fontFamily="@font/actor"
         android:text="NODRIZAS"
         android:textSize="25sp"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="217dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="125dp"
-        android:layout_height="34dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="250dp"
         android:fontFamily="@font/actor"
         android:text="NOVILLAS"
         android:textSize="25sp"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="217dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

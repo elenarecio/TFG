@@ -16,21 +16,28 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setContentView(R.layout.activity_menu);
-        boton=this.findViewById(R.id.Boton);
-        boton2=this.findViewById(R.id.Boton2);
+        /**setContentView(R.layout.activity_menu);*/
+        boton=findViewById(R.id.Boton);
+        boton2=findViewById(R.id.Boton2);
+
+        boton2.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent i = new Intent(MainActivity.this, Menu.class);
+                startActivity(i);
+            }
+        });
 
 
 
     }
 
-    public void botones(View view){
+    /**public void botones(View view){
         boton2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(MainActivity.this, Menu.class));
             }
         });
-    }
+    }*/
 
     public void crear(View view){
         try{

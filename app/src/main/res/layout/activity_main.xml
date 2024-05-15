@@ -26,6 +26,7 @@
         android:layout_width="120pt"
         android:layout_height="20pt"
         android:backgroundTint="#298531"
+        android:onClick="botones"
         android:text="@string/SIN_DATOS"
         app:cornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"

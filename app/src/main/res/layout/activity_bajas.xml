@@ -7,50 +7,54 @@
     android:layout_height="match_parent"
     tools:context=".BajasActivity">
 
-    <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="308dp"
-        android:layout_height="43dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="24dp" />
-
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="129dp"
-        android:layout_height="53dp"
+        android:layout_width="117dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="119dp"
         android:fontFamily="@font/actor"
         android:text="BAJAS"
         android:textSize="40dp"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="14dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button13"
-        android:layout_width="120pt"
-        android:layout_height="25pt"
+        android:layout_width="308dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="239dp"
         android:backgroundTint="#D3389C11"
         android:text="MUERTE"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:cornerRadius="0dp"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="314dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button12"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button12"
-        android:layout_width="120pt"
-        android:layout_height="25pt"
+        android:layout_width="308dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="416dp"
         android:backgroundTint="#D3389C11"
         android:text="VENTAS"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:cornerRadius="0dp"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="169dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
