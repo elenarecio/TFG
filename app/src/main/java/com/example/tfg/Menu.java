@@ -21,6 +21,11 @@ public class Menu extends AppCompatActivity {
         boton3 = findViewById(R.id.boton3);
         boton4 = findViewById(R.id.boton4);
         boton5 = findViewById(R.id.boton5);
+        boton6 = findViewById(R.id.boton6);
+        boton7 = findViewById(R.id.boton7);
+        boton8 = findViewById(R.id.boton8);
+        boton9  = findViewById(R.id.boton9);
+
         EdgeToEdge.enable(this);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -46,6 +51,34 @@ public class Menu extends AppCompatActivity {
         boton5.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent i = new Intent(Menu.this, BajasActivity.class);
+                startActivity(i);
+            }
+        });
+
+        boton6.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent i = new Intent(Menu.this,Alimentacion.class);
+                startActivity(i);
+            }
+        });
+
+        boton7.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent i = new Intent(Menu.this, Ubicacion.class);
+                startActivity(i);
+            }
+        });
+
+        boton8.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent i = new Intent(Menu.this, Saneamiento.class);
+                startActivity(i);
+            }
+        });
+
+        boton9.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent i = new Intent(Menu.this, Incidencias.class);
                 startActivity(i);
             }
         });
