@@ -16,14 +16,14 @@
         android:fontFamily="@font/actor"
         android:text="BAJAS"
         android:textSize="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/button12"
+        app:layout_constraintBottom_toTopOf="@+id/boton12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/boton13"
         android:layout_width="308dp"
         android:layout_height="68dp"
         android:layout_marginStart="65dp"
@@ -39,11 +39,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button12"
+        app:layout_constraintTop_toBottomOf="@+id/boton12"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/boton12"
         android:layout_width="308dp"
         android:layout_height="68dp"
         android:layout_marginBottom="416dp"
