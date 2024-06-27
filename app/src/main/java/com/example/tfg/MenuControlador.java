@@ -11,7 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Menu extends AppCompatActivity {
+public class MenuControlador extends AppCompatActivity {
     Button boton3, boton4, boton5, boton6, boton7, boton8, boton9;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,49 +36,49 @@ public class Menu extends AppCompatActivity {
 
         boton3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent i = new Intent(Menu.this, Animales.class);
+                Intent i = new Intent(MenuControlador.this, AnimalesControlador.class);
                 startActivity(i);
             }
         });
 
         boton4.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent i = new Intent(Menu.this, AltasActivity.class);
+                Intent i = new Intent(MenuControlador.this, AltasControlador.class);
                 startActivity(i);
             }
         });
 
         boton5.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent i = new Intent(Menu.this, BajasActivity.class);
+                Intent i = new Intent(MenuControlador.this, BajasControlador.class);
                 startActivity(i);
             }
         });
 
         boton6.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent i = new Intent(Menu.this,Alimentacion.class);
+                Intent i = new Intent(MenuControlador.this, AlimentacionControlador.class);
                 startActivity(i);
             }
         });
 
         boton7.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent i = new Intent(Menu.this, Ubicacion.class);
+                Intent i = new Intent(MenuControlador.this, UbicacionControlador.class);
                 startActivity(i);
             }
         });
 
         boton8.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent i = new Intent(Menu.this, Saneamiento.class);
+                Intent i = new Intent(MenuControlador.this, SaneamientoControlador.class);
                 startActivity(i);
             }
         });
 
         boton9.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent i = new Intent(Menu.this, Incidencias.class);
+                Intent i = new Intent(MenuControlador.this, IncidenciasControlador.class);
                 startActivity(i);
             }
         });

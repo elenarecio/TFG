@@ -1,6 +1,5 @@
 package com.example.tfg;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,33 +11,30 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class AltasActivity extends AppCompatActivity {
-    Button boton11, boton10;
+public class BajasControlador extends AppCompatActivity {
+    Button boton12, boton13;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setContentView(R.layout.activity_altas);
         super.onCreate(savedInstanceState);
-        boton11 = findViewById(R.id.boton11);
-        boton10 = findViewById(R.id.boton10);
         EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_bajas);
+        boton13 = findViewById(R.id.boton13);
+        boton12 = findViewById(R.id.boton12);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-
-        boton11.setOnClickListener(new View.OnClickListener(){
+        boton13.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent i = new Intent(AltasActivity.this, Nacimientos.class);
+                Intent i = new Intent(BajasControlador.this, MuertesControlador.class);
                 startActivity(i);
             }
         });
-
-        boton10.setOnClickListener(new View.OnClickListener(){
+        boton12.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent i = new Intent(AltasActivity.this, Compras.class);
+                Intent i = new Intent(BajasControlador.this, VentasControlador.class);
                 startActivity(i);
             }
         });
