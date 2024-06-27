@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ventas">
+    android:background="@color/fondo2"
+    tools:context=".VentasControlador">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

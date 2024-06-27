@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Incidencias">
+    android:background="@color/fondo2"
+    tools:context=".IncidenciasControlador">
 
     <TextView
         android:id="@+id/textView15"

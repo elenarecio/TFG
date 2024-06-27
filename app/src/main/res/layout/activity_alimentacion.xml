@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Alimentacion">
+    android:background="@color/fondo2"
+    tools:context=".AlimentacionControlador">
 
     <TextView
         android:id="@+id/textView12"

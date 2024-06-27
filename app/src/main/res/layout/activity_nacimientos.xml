@@ -4,60 +4,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/fondo2"
     android:padding="16dp">
 
-        <EditText
-            android:id="@+id/et_crotal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Crotal"
-            android:inputType="text" />
 
-        <EditText
-            android:id="@+id/et_raza"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Raza"
-            android:inputType="text" />
+    <EditText
+        android:id="@+id/n_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_nombre"
+        android:inputType="text" />
 
-        <EditText
-            android:id="@+id/et_madre"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Crotal de la madre"
-            android:inputType="text" />
-        <EditText
-            android:id="@+id/et_padre"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Crotal del padre"
-            android:inputType="text" />
-        <EditText
-            android:id="@+id/et_nombre"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Nombre (opcional)"
-            android:inputType="text" />
-        <EditText
-            android:id="@+id/et_sexo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Sexo (M/H)"
-            android:inputType="text" />
+    <EditText
+        android:id="@+id/n_raza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_raza"
+        android:inputType="text" />
 
-        <EditText
-            android:id="@+id/et_fechnac"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Fecha de nacimiento"
-            android:inputType="date" />
+    <EditText
+        android:id="@+id/n_sexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_sexo"
+        android:inputType="text" />
 
-        <Button
-            android:id="@+id/btn_guardar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#D3389C11"
-            android:text="GUARDAR" />
+    <EditText
+        android:id="@+id/n_crotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_crotal"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/n_madre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_madre"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/n_padre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_padre"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/n_fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_fecha"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/bt_registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRAR" />
 
 </LinearLayout>
+

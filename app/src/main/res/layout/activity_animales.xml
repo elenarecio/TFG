@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Animales">
+    android:background="@color/fondo2"
+    tools:context=".AnimalesControlador">
 
     <TextView
         android:id="@+id/textView7"
@@ -38,7 +39,6 @@
         android:id="@+id/editTextTextMultiLine"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="51dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="51dp"
         android:layout_marginBottom="150dp"
@@ -47,7 +47,6 @@
         android:inputType="textMultiLine"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -93,4 +92,19 @@
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
+    <Button
+        android:id="@+id/Boton23"
+        android:layout_width="120pt"
+        android:layout_height="20pt"
+        android:backgroundTint="#DC1F3720"
+        android:onClick="crear"
+        android:text="REGISTRAR EXPLOTACION"
+        android:textSize="16sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923" />
 </androidx.constraintlayout.widget.ConstraintLayout>
