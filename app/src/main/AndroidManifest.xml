@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/silueta_fondo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TFG"
         tools:targetApi="31">
+
         <activity
-            android:name=".AnimalesInformacion"
+            android:name=".InformacionAnimalesControlador"
             android:exported="false" />
         <activity
             android:name=".ListadoAnimales"
             android:exported="false" />
         <activity
-            android:name=".Compras"
+            android:name=".ComprasControlador"
             android:exported="false" />
         <activity
-            android:name=".Ventas"
+            android:name=".VentasControlador"
             android:exported="false" />
         <activity
-            android:name=".Muertes"
+            android:name=".MuertesControlador"
             android:exported="false" />
         <activity
-            android:name=".Nacimientos"
+            android:name=".NacimientosControlador"
             android:exported="false" />
         <activity
-            android:name=".Incidencias"
+            android:name=".IncidenciasControlador"
             android:exported="false" />
         <activity
-            android:name=".Saneamiento"
+            android:name=".SaneamientoControlador"
             android:exported="false" />
         <activity
-            android:name=".Ubicacion"
+            android:name=".UbicacionControlador"
             android:exported="false" />
         <activity
-            android:name=".Alimentacion"
+            android:name=".AlimentacionControlador"
             android:exported="false" />
         <activity
-            android:name=".Animales$AlimentacionActivity"
+            android:name=".AnimalesControlador"
             android:exported="false" />
         <activity
-            android:name=".AltasActivity"
+            android:name=".AltasControlador"
             android:exported="false" />
         <activity
-            android:name=".BajasActivity"
+            android:name=".BajasControlador"
+            android:exported="false" />
+
+        <activity
+            android:name=".MenuControlador"
             android:exported="false" />
         <activity
-            android:name=".Animales"
-            android:exported="false" />
-        <activity
-            android:name=".Menu"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".InicioControlador"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

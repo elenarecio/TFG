@@ -5,14 +5,12 @@
     <item android:drawable="@color/fondo" />
 
     <item>
-        <bitmap
-
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_centerInParent="true"
-            android:src="@drawable/silueta_fondo"
-            android:scaleType="fitCenter" />
-
+        <inset
+            android:drawable="@drawable/silueta_fondo"
+            android:insetLeft="500dp"
+            android:insetTop="500dp"
+            android:insetRight="500dp"
+            android:insetBottom="700dp" />
     </item>
 </layer-list>
 

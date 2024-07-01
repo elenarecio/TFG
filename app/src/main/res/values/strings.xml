@@ -4,6 +4,16 @@
     <string name="subir_archivo_xlsx">subir_archivo_.xlsx</string>
     <string name="insertar_archivo_excel">INSERTAR ARCHIVO EXCEL</string>
     <string name="SIN_DATOS">EMPEZAR SIN DATOS</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_raza">Raza</string>
+    <string name="hint_sexo">Sexo</string>
+    <string name="hint_crotal">Crotal</string>
+    <string name="hint_madre">Crotal de la madre</string>
+    <string name="hint_padre">Crotal del padre</string>
+    <string name="hint_fecha">Fecha de nacimiento</string>
+
+
+
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
