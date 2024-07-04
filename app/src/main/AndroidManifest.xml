@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TFG_GestionGanadera"
+        tools:targetApi="31">
+        <activity
+            android:name=".Controladores.InformacionAnimalesControlador"
+            android:exported="false" />
+
+        <activity
+            android:name=".Controladores.ComprasControlador"
+            android:exported="false" />
+        <activity
+            android:name=".Controladores.VentasControlador"
+            android:exported="false" />
+        <activity
+            android:name=".Controladores.MuertesControlador"
+            android:exported="false" />
+        <activity
+            android:name=".Controladores.NacimientosControlador"
+            android:exported="false" />
+        <activity
+            android:name=".Controladores.IncidenciasControlador"
+            android:exported="false" />
+        <activity
+            android:name=".Controladores.SaneamientoControlador"
+            android:exported="false" />
+        <activity
+            android:name=".Controladores.UbicacionControlador"
+            android:exported="false" />
+        <activity
+            android:name=".Controladores.AlimentacionControlador"
+            android:exported="false" />
+        <activity
+            android:name=".Controladores.AnimalesControlador"
+            android:exported="false" />
+        <activity
+            android:name=".Controladores.AltasControlador"
+            android:exported="false" />
+        <activity
+            android:name=".Controladores.BajasControlador"
+            android:exported="false" />
+
+        <activity
+            android:name=".Controladores.MenuControlador"
+            android:exported="false" />
+        <activity
+            android:name=".Controladores.InicioControlador"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

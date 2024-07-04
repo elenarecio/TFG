@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo2"
+    tools:context=".RegistroExplotacionControlador">
+
+    <EditText
+        android:id="@+id/et_crotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Crotal"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/et_raza"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Raza"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_crotal"/>
+
+    <EditText
+        android:id="@+id/et_madre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Crotal de la madre"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_raza"/>
+
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre (opcional)"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_madre"/>
+
+    <EditText
+        android:id="@+id/et_sexo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Sexo (M/H)"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_nombre"/>
+
+    <EditText
+        android:id="@+id/et_fechnac"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Fecha de nacimiento (yyyy-MM-dd)"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_sexo"/>
+
+    <Button
+        android:id="@+id/btn_guardar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_fechnac"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
