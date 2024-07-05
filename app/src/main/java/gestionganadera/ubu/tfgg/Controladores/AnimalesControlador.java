@@ -25,8 +25,27 @@ public class AnimalesControlador extends AppCompatActivity {
     private String TABLA_ANIMALES="t_animales";
     Button Boton23;
 
-    public AnimalesControlador(Context context){
-        bd=new BD(context);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_animales);
+
+        Boton23 = findViewById(R.id.Boton23);
+
+        EdgeToEdge.enable(this);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+
+        Boton23.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent i = new Intent(AnimalesControlador.this, RegistroExplotacionControlador.class);
+                startActivity(i);
+            }
+        });
+
     }
 
     public int eliminarAnimal(Animal animal){
@@ -92,29 +111,5 @@ public class AnimalesControlador extends AppCompatActivity {
 
         cursor.close();
         return animales;
-    }
-
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_animales);
-
-        Boton23 = findViewById(R.id.Boton23);
-
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
-
-        Boton23.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent i = new Intent(AnimalesControlador.this, RegistroExplotacionControlador.class);
-                startActivity(i);
-            }
-        });
-
     }
 }
