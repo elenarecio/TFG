@@ -6,13 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fondo2"
-    tools:context=".AltasControlador">
+    tools:context=".Controladores.AltasControlador">
 
     <ImageView
         android:id="@+id/fondoImagen"
-        android:layout_width="369dp"
-        android:layout_height="407dp"
+        android:layout_width="396dp"
+        android:layout_height="551dp"
         android:layout_centerInParent="true"
+        android:alpha="0.6"
         android:scaleType="fitCenter"
         android:src="@drawable/silueta_fondo"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,11 +53,11 @@
         app:cornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/boton10"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.988" />
+        app:layout_constraintVertical_bias="0.997" />
 
     <Button
         android:id="@+id/boton10"

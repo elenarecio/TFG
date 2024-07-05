@@ -6,60 +6,59 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fondo"
-    tools:context=".InicioControlador">
+    tools:context=".Controladores.InicioControlador">
 
     <ImageView
         android:id="@+id/fondoImagen"
-        android:layout_width="289dp"
-        android:layout_height="280dp"
+        android:layout_width="332dp"
+        android:layout_height="304dp"
         android:layout_centerInParent="true"
         android:scaleType="fitCenter"
         android:src="@drawable/silueta_fondo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.277" />
+        app:layout_constraintVertical_bias="0.318" />
 
     <Button
         android:id="@+id/Boton"
-        android:layout_width="120pt"
-        android:layout_height="20pt"
+        android:layout_width="303dp"
+        android:layout_height="71dp"
         android:backgroundTint="#DC1F3720"
         android:onClick="crear"
         android:text="@string/insertar_archivo_excel"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:cornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.742" />
 
     <Button
         android:id="@+id/Boton2"
-        android:layout_width="120pt"
-        android:layout_height="20pt"
+        android:layout_width="303dp"
+        android:layout_height="71dp"
         android:backgroundTint="#DC1F3720"
         android:onClick="botones"
         android:text="@string/SIN_DATOS"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:cornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.851" />
+        app:layout_constraintVertical_bias="0.893" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="272dp"
         android:layout_height="61dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-medium"
+        android:fontFamily="monospace"
         android:text="VacApp"
         android:textAlignment="center"
         android:textColor="#000000"

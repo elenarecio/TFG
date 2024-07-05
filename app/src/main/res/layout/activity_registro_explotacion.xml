@@ -6,102 +6,127 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fondo2"
-    tools:context=".RegistroExplotacionControlador">
+    tools:context=".Controladores.RegistroExplotacionControlador">
 
-    <EditText
-        android:id="@+id/et_crotal"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Crotal"
-        android:inputType="text"
-        android:minHeight="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <EditText
-        android:id="@+id/et_raza"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Raza"
-        android:inputType="text"
-        android:minHeight="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_crotal"/>
-
-    <EditText
-        android:id="@+id/et_madre"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Crotal de la madre"
-        android:inputType="text"
-        android:minHeight="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_raza"/>
-
-    <EditText
-        android:id="@+id/et_nombre"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Nombre (opcional)"
-        android:inputType="text"
-        android:minHeight="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_madre"/>
-
-    <EditText
-        android:id="@+id/et_sexo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Sexo (M/H)"
-        android:inputType="text"
-        android:minHeight="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_nombre"/>
-
-    <EditText
-        android:id="@+id/et_fechnac"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Fecha de nacimiento (yyyy-MM-dd)"
-        android:inputType="date"
-        android:minHeight="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_sexo"/>
-
-    <Button
-        android:id="@+id/btn_guardar2"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Guardar"
-        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <EditText
+        android:id="@+id/editNombre"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/hint_nombre"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/editCrotal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_fechnac"/>
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@id/guideline_top"/>
 
+    <EditText
+        android:id="@+id/editCrotal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/hint_crotal"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/editNombre"
+        app:layout_constraintBottom_toTopOf="@id/editMadre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.1" />
 
+    <EditText
+        android:id="@+id/editMadre"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/hint_madre"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/editCrotal"
+        app:layout_constraintBottom_toTopOf="@id/editPadre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.1" />
+
+    <EditText
+        android:id="@+id/editPadre"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/hint_padre"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/editMadre"
+        app:layout_constraintBottom_toTopOf="@id/editSexo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.1" />
+
+    <EditText
+        android:id="@+id/editSexo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/hint_sexo"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/editPadre"
+        app:layout_constraintBottom_toTopOf="@id/editRaza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.1" />
+
+    <EditText
+        android:id="@+id/editRaza"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/hint_raza"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/editSexo"
+        app:layout_constraintBottom_toTopOf="@id/editFecha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.1" />
+
+    <EditText
+        android:id="@+id/editFecha"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/hint_fecha"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@id/editRaza"
+        app:layout_constraintBottom_toTopOf="@id/BotonGuardar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.1" />
+
+    <Button
+        android:id="@+id/BotonGuardar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#DC1F3720"
+        android:text="@string/GUARDAR"
+        android:textSize="25sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintTop_toBottomOf="@id/editFecha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintBottom_toTopOf="@id/guideline_bottom"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

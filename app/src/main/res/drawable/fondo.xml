@@ -7,8 +7,8 @@
     <item>
         <inset
             android:drawable="@drawable/silueta_fondo"
-            android:insetLeft="500dp"
-            android:insetTop="500dp"
+            android:insetLeft="400dp"
+            android:insetTop="400dp"
             android:insetRight="500dp"
             android:insetBottom="700dp" />
     </item>

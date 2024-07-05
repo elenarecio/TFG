@@ -6,106 +6,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fondo2"
-    tools:context=".AnimalesControlador">
+    tools:context=".Controladores.AnimalesControlador">
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="136dp"
-        android:layout_height="52dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="124dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="TERNEROS"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="0dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginEnd="58dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="TOROS"
-        android:textSize="25sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
-        app:layout_constraintEnd_toStartOf="@+id/textView7"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextMultiLine"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="51dp"
-        android:layout_marginBottom="150dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="303dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="150dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="ANIMALES"
-        android:textAlignment="center"
-        android:textSize="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="165dp"
-        android:layout_height="84dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginBottom="408dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="NODRIZAS"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="144dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="250dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="NOVILLAS"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
         android:id="@+id/Boton23"
-        android:layout_width="120pt"
-        android:layout_height="20pt"
+        android:layout_width="377dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="#DC1F3720"
-        android:onClick="crear"
-        android:text="REGISTRAR EXPLOTACION"
+        android:text="@string/REGISTRO"
         android:textSize="16sp"
         app:cornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.923" />
+        app:layout_constraintVertical_bias="0.9" />
 </androidx.constraintlayout.widget.ConstraintLayout>
