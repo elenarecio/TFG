@@ -69,11 +69,11 @@ public class AdaptadorAnimales extends RecyclerView.Adapter<AdaptadorAnimales.My
             super(itemView);
             this.nombre = itemView.findViewById(R.id.tvNombre);
             this.crotal = itemView.findViewById(R.id.tvCrotal);
-            /**this.crotal_madre = itemView.findViewById(R.id.tvCrotalMadre);
+            this.crotal_madre = itemView.findViewById(R.id.tvCrotalMadre);
             this.crotal_padre = itemView.findViewById(R.id.tvCrotalPadre);
             this.sexo = itemView.findViewById(R.id.tvSexo);
             this.raza = itemView.findViewById(R.id.tvRaza);
-            this.fech_nac = itemView.findViewById(R.id.tvFechaNac);*/
+            this.fech_nac = itemView.findViewById(R.id.tvFechaNac);
 
         }
     }

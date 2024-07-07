@@ -6,12 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fondo2"
-    tools:context=".BajasControlador">
+    tools:context=".Controladores.BajasControlador">
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="117dp"
-        android:layout_height="49dp"
+        android:layout_width="151dp"
+        android:layout_height="52dp"
         android:layout_marginTop="13dp"
         android:layout_marginBottom="119dp"
         android:fontFamily="sans-serif-medium"
@@ -22,40 +22,53 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+    <ImageView
+        android:id="@+id/fondoImagen"
+        android:layout_width="396dp"
+        android:layout_height="551dp"
+        android:layout_centerInParent="true"
+        android:alpha="0.6"
+        android:scaleType="fitCenter"
+        android:src="@drawable/silueta_fondo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.277" />
 
     <Button
         android:id="@+id/boton13"
-        android:layout_width="308dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginEnd="65dp"
-        android:layout_marginBottom="239dp"
-        android:backgroundTint="#D3389C11"
-        android:text="MUERTE"
+        android:layout_width="298dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="252dp"
+        android:backgroundTint="@color/botones"
+        android:text="@string/MUERTES"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
+        android:visibility="visible"
         app:cornerRadius="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/boton12"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/boton12"
-        android:layout_width="308dp"
-        android:layout_height="68dp"
-        android:layout_marginBottom="416dp"
-        android:backgroundTint="#D3389C11"
-        android:text="VENTAS"
+        android:layout_width="298dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="404dp"
+        android:backgroundTint="@color/botones"
+        android:text="@string/VENTAS"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
+        android:visibility="visible"
         app:cornerRadius="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

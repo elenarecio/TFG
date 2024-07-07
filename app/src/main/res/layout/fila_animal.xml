@@ -3,48 +3,69 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:padding="8dp"
+    android:clickable="true"
+    android:focusable="true">
+
+
+    <TextView
+        android:id="@+id/tvCrotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crotal"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingBottom="4dp" />
 
     <TextView
         android:id="@+id/tvNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/tvCrotal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Crotal" />
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingBottom="4dp" />
 
     <TextView
         android:id="@+id/tvCrotalMadre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:text="Crotal Madre" />
 
     <TextView
         android:id="@+id/tvCrotalPadre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:text="Crotal Padre" />
 
     <TextView
         android:id="@+id/tvSexo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:text="Sexo" />
 
     <TextView
         android:id="@+id/tvFechaNac"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:text="Fecha Nacimiento" />
 
     <TextView
         android:id="@+id/tvRaza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:text="Raza" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
 </LinearLayout>

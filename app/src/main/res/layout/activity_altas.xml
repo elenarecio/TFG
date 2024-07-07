@@ -39,47 +39,38 @@
 
 
     <Button
-        android:id="@+id/boton11"
-        android:layout_width="282dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginEnd="65dp"
-        android:layout_marginBottom="287dp"
+        android:id="@+id/boton10"
+        android:layout_width="298dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="252dp"
         android:backgroundTint="@color/botones"
-        android:text="NACIMIENTOS"
+        android:text="@string/COMPRAS"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
+        android:visibility="visible"
         app:cornerRadius="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/boton10"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.997" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/boton10"
-        android:layout_width="285dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginEnd="65dp"
-        android:layout_marginBottom="432dp"
+        android:id="@+id/boton11"
+        android:layout_width="298dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="412dp"
         android:backgroundTint="@color/botones"
-        android:text="COMPRAS"
+        android:text="@string/NACIMIENTOS"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
+        android:visibility="visible"
         app:cornerRadius="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.973" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView22"
