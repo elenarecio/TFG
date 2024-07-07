@@ -6,16 +6,26 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/fondo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TFG_GestionGanadera"
         tools:targetApi="31">
         <activity
+            android:name=".MainAnimales"
+            android:exported="false" />
+        <activity
+            android:name=".Controladores.AnimalesControlador"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroExplotacionControlador"
+            android:exported="false" />
+        <activity
+            android:name=".Controladores.ComprasControlador$RegistroExplotacionControlador"
+            android:exported="false" />
+        <activity
             android:name=".Controladores.InformacionAnimalesControlador"
             android:exported="false" />
-
         <activity
             android:name=".Controladores.ComprasControlador"
             android:exported="false" />
@@ -24,9 +34,6 @@
             android:exported="false" />
         <activity
             android:name=".Controladores.MuertesControlador"
-            android:exported="false" />
-        <activity
-            android:name=".Controladores.NacimientosControlador"
             android:exported="false" />
         <activity
             android:name=".Controladores.IncidenciasControlador"
@@ -40,16 +47,13 @@
         <activity
             android:name=".Controladores.AlimentacionControlador"
             android:exported="false" />
-        <activity
-            android:name=".Controladores.AnimalesControlador"
-            android:exported="false" />
+
         <activity
             android:name=".Controladores.AltasControlador"
             android:exported="false" />
         <activity
             android:name=".Controladores.BajasControlador"
             android:exported="false" />
-
         <activity
             android:name=".Controladores.MenuControlador"
             android:exported="false" />
@@ -63,6 +67,9 @@
             </intent-filter>
         </activity>
 
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 
 public class BD extends SQLiteOpenHelper {
 
-    private static final int VERSION = 4;
+    private static final int VERSION = 6;
     private static final String BD_NOMBRE = "ganaderia.db";
 
     // Nombres de las tablas
@@ -29,6 +29,7 @@ public class BD extends SQLiteOpenHelper {
 
         super(context, BD_NOMBRE, null, VERSION);
     }
+
 
     @Override
     public void onCreate(SQLiteDatabase db) {

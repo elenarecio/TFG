@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import gestionganadera.ubu.tfgg.MainAnimales;
 import gestionganadera.ubu.tfgg.R;
 
 public class MenuControlador extends AppCompatActivity {
@@ -37,7 +39,7 @@ public class MenuControlador extends AppCompatActivity {
 
         boton3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent i = new Intent(MenuControlador.this, AnimalesControlador.class);
+                Intent i = new Intent(MenuControlador.this, MainAnimales.class);
                 startActivity(i);
             }
         });

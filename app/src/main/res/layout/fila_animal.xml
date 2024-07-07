@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvCrotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crotal" />
+
+    <TextView
+        android:id="@+id/tvCrotalMadre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crotal Madre" />
+
+    <TextView
+        android:id="@+id/tvCrotalPadre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crotal Padre" />
+
+    <TextView
+        android:id="@+id/tvSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sexo" />
+
+    <TextView
+        android:id="@+id/tvFechaNac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha Nacimiento" />
+
+    <TextView
+        android:id="@+id/tvRaza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Raza" />
+</LinearLayout>
