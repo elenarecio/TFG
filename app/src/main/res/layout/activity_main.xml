@@ -8,6 +8,7 @@
     android:background="@color/fondo"
     tools:context=".Controladores.InicioControlador">
 
+
     <ImageView
         android:id="@+id/fondoImagen"
         android:layout_width="332dp"
@@ -20,24 +21,7 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.318" />
-
-    <Button
-        android:id="@+id/Boton"
-        android:layout_width="303dp"
-        android:layout_height="71dp"
-        android:backgroundTint="#DC1F3720"
-        android:onClick="crear"
-        android:text="@string/insertar_archivo_excel"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        app:cornerRadius="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.742" />
+        app:layout_constraintVertical_bias="0.442" />
 
     <Button
         android:id="@+id/Boton2"
@@ -46,7 +30,7 @@
         android:backgroundTint="#DC1F3720"
         android:textColor="@color/white"
         android:onClick="botones"
-        android:text="@string/SIN_DATOS"
+        android:text="@string/INICIARAPP"
         android:textSize="20sp"
         app:cornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,11 +41,11 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="272dp"
-        android:layout_height="61dp"
+        android:layout_width="379dp"
+        android:layout_height="119dp"
         android:layout_marginTop="16dp"
         android:fontFamily="monospace"
-        android:text="VacApp"
+        android:text="GESTIÓN GANADERA"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textColorLink="#050505"

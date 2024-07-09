@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/MenuAnimales"
+        android:title="@string/ANIMALES" />
+    <item
+        android:id="@+id/MenuAltas"
+        android:title="@string/ALTAS" />
+    <item
+        android:id="@+id/MenuBajas"
+        android:title="@string/BAJAS" />
+    <item
+        android:id="@+id/MenuIncidencias"
+        android:title="@string/INCIDENCIAS" />
+
+    <item
+        android:id="@+id/MenuSaneamiento"
+        android:title="@string/SANEAMIENTO" />
+    <item
+        android:id="@+id/MenuUbicacion"
+        android:title="@string/UBICACION" />
+</menu>

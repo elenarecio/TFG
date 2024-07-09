@@ -1,4 +1,6 @@
 package gestionganadera.ubu.tfgg;
+
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,12 +18,12 @@ public class AdaptadorAnimales extends RecyclerView.Adapter<AdaptadorAnimales.My
 
     private List<Animal> listaDeAnimales;
 
-    public void setListaDeMascotas(List<Animal> listaDeAnimales) {
+    public void setListaDeAnimales(List<Animal> listaDeAnimales) {
         this.listaDeAnimales = listaDeAnimales;
     }
 
-    public AdaptadorAnimales(List<Animal> mascotas) {
-        this.listaDeAnimales = mascotas;
+    public AdaptadorAnimales(List<Animal> listaDeAnimales) {
+        this.listaDeAnimales = listaDeAnimales;
     }
 
     @NonNull
@@ -33,28 +35,30 @@ public class AdaptadorAnimales extends RecyclerView.Adapter<AdaptadorAnimales.My
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
-        // Obtener la mascota de nuestra lista gracias al índice i
         Animal animal = listaDeAnimales.get(i);
 
-        // Obtener los datos de la lista
-        String nombre = animal.getNombre();
-        String crotal = animal.getCrotal();
-        String crotal_madre = animal.getCrotal_madre();
-        String crotal_padre = animal.getCrotal_padre();
-        String sexo = animal.getSexo();
-        String raza = animal.getRaza();
-        String fech_nac = animal.getFecha_nac();
-        // Y poner a los TextView los datos con setText
-        myViewHolder.nombre.setText(nombre);
-        myViewHolder.crotal.setText(crotal);
-        myViewHolder.crotal_madre.setText(crotal_madre);
-        myViewHolder.crotal_padre.setText(crotal_padre);
-        myViewHolder.sexo.setText(sexo);
-        myViewHolder.raza.setText(raza);
-        myViewHolder.fech_nac.setText(fech_nac);
+        myViewHolder.nombre.setText(animal.getNombre());
+        myViewHolder.crotal.setText(animal.getCrotal());
+        myViewHolder.crotal_madre.setText(animal.getCrotal_madre());
+        myViewHolder.crotal_padre.setText(animal.getCrotal_padre());
+        myViewHolder.sexo.setText(animal.getSexo());
+        myViewHolder.raza.setText(animal.getRaza());
+        myViewHolder.fech_nac.setText(animal.getFecha_nac());
 
-
-
+        myViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), DetalleActivity.class);
+                intent.putExtra("NOMBRE", animal.getNombre());
+                intent.putExtra("CROTAL", animal.getCrotal());
+                intent.putExtra("CROTAL_MADRE", animal.getCrotal_madre());
+                intent.putExtra("CROTAL_PADRE", animal.getCrotal_padre());
+                intent.putExtra("SEXO", animal.getSexo());
+                intent.putExtra("RAZA", animal.getRaza());
+                intent.putExtra("FECHA_NAC", animal.getFecha_nac());
+                v.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -74,7 +78,6 @@ public class AdaptadorAnimales extends RecyclerView.Adapter<AdaptadorAnimales.My
             this.sexo = itemView.findViewById(R.id.tvSexo);
             this.raza = itemView.findViewById(R.id.tvRaza);
             this.fech_nac = itemView.findViewById(R.id.tvFechaNac);
-
         }
     }
 }

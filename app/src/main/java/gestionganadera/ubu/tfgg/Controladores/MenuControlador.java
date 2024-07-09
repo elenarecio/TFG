@@ -15,7 +15,7 @@ import gestionganadera.ubu.tfgg.MainAnimales;
 import gestionganadera.ubu.tfgg.R;
 
 public class MenuControlador extends AppCompatActivity {
-    Button boton3, boton4, boton5, boton6, boton7, boton8, boton9;
+    Button boton3, boton4, boton5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,11 +23,7 @@ public class MenuControlador extends AppCompatActivity {
 
         boton3 = findViewById(R.id.boton3);
         boton4 = findViewById(R.id.boton4);
-        boton5 = findViewById(R.id.boton5);
-        boton6 = findViewById(R.id.boton6);
-        boton7 = findViewById(R.id.boton7);
-        boton8 = findViewById(R.id.boton8);
-        boton9  = findViewById(R.id.boton9);
+        boton5 = findViewById(R.id.boton5);;
 
         EdgeToEdge.enable(this);
 
@@ -57,34 +53,5 @@ public class MenuControlador extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
-        boton6.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent i = new Intent(MenuControlador.this, AlimentacionControlador.class);
-                startActivity(i);
-            }
-        });
-
-        boton7.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent i = new Intent(MenuControlador.this, UbicacionControlador.class);
-                startActivity(i);
-            }
-        });
-
-        boton8.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent i = new Intent(MenuControlador.this, SaneamientoControlador.class);
-                startActivity(i);
-            }
-        });
-
-        boton9.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent i = new Intent(MenuControlador.this, IncidenciasControlador.class);
-                startActivity(i);
-            }
-        });
-
     }
 }

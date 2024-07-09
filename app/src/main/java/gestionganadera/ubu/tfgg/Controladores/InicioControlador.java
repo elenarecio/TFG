@@ -18,23 +18,7 @@ public class InicioControlador extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        boton=findViewById(R.id.Boton);
         boton2=findViewById(R.id.Boton2);
-
-        /**boton.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                BD bd = new BD(InicioControlador.this);
-                SQLiteDatabase db = bd.getWritableDatabase();
-                if(db != null){
-                    Toast.makeText(InicioControlador.this, "BASE DE DATOS CREADA CORRECTAMENTE", Toast.LENGTH_LONG).show();
-                } else {
-                    Toast.makeText(InicioControlador.this, "NO SE HA PODIDO CREAR LA BASE DE DATOS", Toast.LENGTH_LONG).show();
-                }
-            }
-        });*/
-
-
-
     }
 
     public void botones(View view){
@@ -52,19 +36,4 @@ public class InicioControlador extends AppCompatActivity {
         });
     }
 
-   /** public void crear(View view){
-        try{
-            BD obj=new BD(this);
-            SQLiteDatabase db=obj.getWritableDatabase();
-            if(db!=null){
-                Toast.makeText(this, "La base de datos ha sido creada", Toast.LENGTH_LONG).show();
-            }else{
-                Toast.makeText(this, "La base de datos no se ha creado", Toast.LENGTH_LONG).show();
-            }
-
-
-        }catch(Exception e){
-            Toast.makeText(this,e.toString(),Toast.LENGTH_LONG).show();
-        }
-    }*/
 }
